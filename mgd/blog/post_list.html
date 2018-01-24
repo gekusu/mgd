@@ -1,0 +1,10 @@
+<html>
+<head>Welcome to MartinGlobal</head>
+<body>
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreasbr }}</p>
+    <div>
+{% endfor %}
